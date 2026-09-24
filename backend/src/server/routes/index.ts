@@ -1029,9 +1029,11 @@ export const registerRoutes = async (
   });
 
   const resourceMetadataService = resourceMetadataServiceFactory({
+    db,
     resourceMetadataDAL,
     permissionService,
     folderDAL,
+    projectEnvDAL,
     kmsService
   });
 
